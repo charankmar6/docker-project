@@ -1,4 +1,3 @@
-FROM adoptopenjdk/openjdk8:latest
-EXPOSE 8080
-ADD target/docker-project.jar docker-project.jar
-ENTRYPOINT ["java","-jar","/docker-project.jar"]
+FROM tomcat:8
+LABEL app=my-app
+COPY target/*.war /usr/local/tomcat/webapps/myweb.war
