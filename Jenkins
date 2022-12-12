@@ -1,9 +1,0 @@
-node{
-    stage('Scm Checkout'){
-       git 'https://github.com/charankmar6/docker-project.git' 
-
-    }
-
-    
-
-}
